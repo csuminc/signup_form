@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>회원가입</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+
+      body {
+      }
+
+      #signUpForm {
+        background-color: beige;
+        width: 650px;
+        height: 600px;
+      }
+    </style> -->
+  </head>
+  <body>
+    <form action="" method="post" id="signup_form">
+      <header id="heading">
+        <h3>회원가입</h3>
+      </header>
+
+      <main id="main_section">
+        <div>
+          <label for="id" class="">아이디</label>
+          <input type="text" id="id" placeholder="아이디" />
+          <button type="button">중복확인</button>
+        </div>
+
+        <div>
+          <label for="pw">비밀번호</label>
+          <input type="password" id="pw" placeholder="비밀번호" />
+        </div>
+
+        <div>
+          <label for="pw_tc">비밀번호 확인</label>
+          <input type="password" id="pw_tc" placeholder="비밀번호확인" />
+        </div>
+
+        <div>
+          <label for="name">이름</label>
+          <input type="text" id="name" placeholder="이름" />
+        </div>
+
+        <div>
+          <label for="man woman">성별</label>
+          <input type="radio" id="man" name="gender" />
+          <label for="man">남자</label>
+          <input type="radio" id="woman" name="gender" />
+          <label for="woman">여자</label>
+        </div>
+
+        <div>
+          <label for="birth">생년월일</label>
+          <input type="date" id="birth" placeholder="생년월일" />
+        </div>
+
+        <div>
+          <label for="address address_detail">주소</label>
+          <input type="text" id="address" placeholder="주소를 입력하세요" />
+          <input type="text" id="address_detail" placeholder="상세주소" />
+        </div>
+
+        <div>
+          <label for="tel">통신사 선택</label>
+          <select id="tel">
+            <option value="skt">SKT</option>
+            <option value="kt">KT</option>
+            <option value="lg">LG U+</option>
+            <option value="skt_">SKT 알뜰폰</option>
+            <option value="kt_">KT 알뜰폰</option>
+            <option value="lg_">LG U+ 알뜰폰</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="phone">전화번호</label>
+          <input type="tel" id="phone" placeholder="전화번호" />
+          <button type="button">인증요청</button>
+        </div>
+      </main>
+
+      <footer>
+        <div>
+          <input type="checkbox" name="" id="agree" />
+          <label for="agree">
+            <span>[필수] 이용약관 개인정보 수집 및 정보이용에 동의합니다.</span>
+          </label>
+        </div>
+        <button type="button">가입하기</button>
+      </footer>
+    </form>
+  </body>
+</html>
